@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stilos/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Parques de Diversões</title>
+    </head>
+    <body onresize="tamanhoMudado()">
+        <nav>
+            <div id="hamburguer">
+                <i class="material-icons" onclick="abilitarMenu()">menu</i>
+            </div>
+            <div id="container-btn">
+                <div class="btn-pag" onclick="mudarPag(0, 0)"><p class="p-pag">Os parques de diversões mais conhecidos do mundo</p></div>
+                <div class="btn-pag" onclick="mudarPag(1, 1)"><p class="p-pag">Acessibilidade e segurança</p></div>
+                <div class="btn-pag" onclick="mudarPag(2, 2)"><p class="p-pag">Identidade visual</p></div>
+            </div>
+        </nav>
+        <main>
+            <section id="pag1" class="pags">
+                <h1>Os parques de diversões mais conhecidos do mundo</h1>
+                <p>Alguma vez você já se perguntou quais são os parques de diversões mais conhecidos do mundo?</p>
+                <article>
+                    <img class="img-repre" src="images/pag1/disney-img/dysney-img-1000px.jpg" alt="Disney image">
+                    <h2>Disney World</h2>
+                    <p>Na primeira posição se encontra o parque Disney World, fundados no ano de 1965, esses parques ficam em primeiro lugar quando se fala dos parques mais famosos.</p>
+                </article>
+                <article>
+                    <img class="img-repre" src="images/pag1/ferrari-img/ferrari-img-1000px.jpg" alt="Ferrari World image">
+                    <h2>Ferrari World</h2>
+                    <p>Já o segundo colocado é o parque da Ferrari World, ele foi inaugurado no ano de 2010, fica localizado nos Emirados Árabes. Segundo os donos do parque, esse é o maior parque temático coberto do mundo inteiro.</p>
+                </article>
+                <article>
+                    <img class="img-repre" src="images/pag1/beto-carrero-img/beto-carrero-img-1000px.jpg" alt="Beto Carrero image">
+                    <h2>Beto Carrero World</h2>
+                    <p>E por ultimo, temos o Beto Carrero World, inaugurado no ano de 1991, tendo uma área de 14 quilômetros quadrados e localizado na cidade de Penha, em Santa Catarina.</p>
+                </article>
+            </section>
+            <section class="pags">
+                <h1>Acessibilidade e segurança</h1>
+                <p>Em um parque de diversões é essencial em que tenha acessibilidade para deficientes e uma boa segurança para todo seu publico.</p>
+                <section>
+                    <img class="img-repre" src="images/pag2/beto-carrero/beto-carrero-img.jpg" alt="Beto carrero image">
+                    <h2>Beto Carrero</h2>
+                    <p>O Beto Carrero tem um tipo de segurança muito boa, pedindo para que possa entrar nos brinquedos tenha uma altura mínima de 1,30m(mudando de acordo com os brinquedos), já a acessibilidade deixa muito a desejar, pois eles não oferecem nenhum tipo de ajuda para que deficientes tenham uma otima experiencia como os não deficientes.</p>
+                </section>
+                <article>
+                    <img class="img-repre" src="images/pag2/hopi-hari/hopi-hari-brinquedo.jpg" alt="Hopi Hari image">
+                    <h2>Hopi Hari</h2>
+                    <p>O parque de diversão Hopi Hari, tem um lugar em especifico para alugar cadeiras de rodas caso seja preciso, além disso, caso queira também, você poderá entrar no parque com sua propria cadeira de rodas.</p>
+                    <p>Já na segurança desse parque não há altura mínima para usarem os brinquedos, porém crianças até 1,20m devem estar acompanhadas com um responsavel, além das travas de segurança.</p>
+                </article>
+            </section>
+            <section class="pags">
+                <h1>Identidade visual de parques de diversões</h1>
+                <p>As identidades visuais de cada parque de diversão é muito importante para que tenha um tipo de marca e não ser só mais um parque "qualquer".</p>
+                <article>
+                    <img class="img-repre" src="images/pag3/disney-castle-img/disney-castle-img-1000px.jpg" alt="Disney castle image">
+                    <h2>Disney World</h2>
+                    <p>A Disney, que também é a mais conhecida do mundo, tem uma identidade visual clássica, o castelo que aparece em todos os filmes da Disney.</p>
+                </article>
+                <article>
+                    <img class="img-repre" src="images/pag3/hopi-hari-img/hopi-hari-img.jpg" alt="Hopi hari entrance image">
+                    <h2>Hopi Hari</h2>
+                    <p>Já a entrada do Hopi Hari, tem uma imagem de um cubo com varias cores saindo dele, e também á um texto escrito <q><abbr title="Imigração em Hopi Hari">Imigradero dl Hopi Hari</abbr></q>.</p>
+                </article>
+            </section>  
+        </main>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
