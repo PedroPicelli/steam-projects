@@ -14,18 +14,23 @@ abbr {
 }
 
 nav {
-    background-color: #0550df;
+    background-color: #0570df;
     box-shadow: 1px 1px 5px 2px #00000077;
 }
 
 nav div#hamburguer i.material-icons {
-    -webkit-user-select:none;  
-    -moz-user-select:none;     
-    -ms-user-select:none;      
-    user-select:none;  
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;  
 
     display: none;
     cursor: pointer;
+    transition: background-color .8s;
+}
+
+nav div#hamburguer i.material-icons:hover {
+    background-color: #004090;
 }
 
 nav div#container-btn {
@@ -43,6 +48,11 @@ nav div.btn-pag {
     cursor: pointer;
     font-size: 1.3em;
     color: #000;
+    transition: background-color .8s;
+}
+
+nav div.btn-pag:hover {
+    background-color: #004090;
 }
 
 nav div#escolhido {
@@ -66,6 +76,11 @@ section img.img-princ {
 
 section img.img-repre {
     width: 50%;
+    transition: width .5s;
+}
+
+section img.img-repre:hover {
+    width: 70%;
 }
 
 section h1 {
@@ -82,35 +97,6 @@ section p {
     line-height: 1.4em;
     margin: 10px 0 20px 0;
     font-size: 1.3em;
-}
-
-@media screen and (max-width: 770px) {
-    nav div#hamburguer i.material-icons {
-        position: relative;
-        background-color: #0550df;
-        width: 100%;
-        display: inherit;
-        text-align: center;
-        font-size: 35px;
-        z-index: 2;
-    }
-
-    nav div#container-btn {
-        display: none;
-        position: relative;
-        flex-direction: column;
-        z-index: 0;
-    }
-
-    nav div.btn-pag {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 771px) and (max-width: 1499px) {
-    nav div#container-btn {
-        flex-direction: row;
-    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -130,6 +116,41 @@ section p {
         font-size: 1.6em;
         line-height: 1.6em;
         text-indent: 1.5em;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1499px) {
+    nav div#container-btn {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    nav div#hamburguer i.material-icons {
+        position: relative;
+        background-color: #0570df;
+        width: 100%;
+        display: inherit;
+        text-align: center;
+        font-size: 35px;
+        z-index: 2;
+    }
+
+    nav div#container-btn {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        z-index: 0;
+    }
+
+    nav div.btn-pag {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    p {
+        font-size: 0.65em;
     }
 }
 

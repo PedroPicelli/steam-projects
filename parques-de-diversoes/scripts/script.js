@@ -6,7 +6,6 @@ function tamanhoMudado() {
     if(largura > 770) {
         menu.style.display = 'flex'
         menu.style.flexDirection = 'row'
-        console.log(menu.style.flexDirection)
     } else {
         menu.style.display = 'none'
     }
@@ -38,17 +37,6 @@ function mudarPag(btn, pag) {
         pags[c].style.display = 'none'
     }
     pags[pag].style.display = 'inherit'
-}
-
-function tela() {
-    const largura = window.document.body.clientWidth
-    const parag = window.document.getElementsByClassName('p-pag')
-    for(let c = 0; c < parag.length; c++) {
-        parag[c].style.width = (largura + 'px')
-    }
-    setTimeout(() => {
-        tela()
-    }, 1)
 }
 
 mudarPag(0, 0)
